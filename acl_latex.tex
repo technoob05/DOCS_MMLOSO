@@ -1,0 +1,182 @@
+\documentclass[11pt]{article}
+
+% Change "review" to "final" to generate the final (sometimes called camera-ready) version.
+% Change to "preprint" to generate a non-anonymous version with page numbers.
+\usepackage[review]{acl}
+
+% Standard package includes
+\usepackage{times}
+\usepackage{latexsym}
+
+% For proper rendering and hyphenation of words containing Latin characters (including in bib files)
+\usepackage[T1]{fontenc}
+% For Vietnamese characters
+% \usepackage[T5]{fontenc}
+% See https://www.project.org/help/documentation/encguide.pdf for other character sets
+
+% This assumes your files are encoded as UTF8
+\usepackage[utf8]{inputenc}
+
+% This is not strictly necessary, and may be commented out,
+% but it will improve the layout of the manuscript,
+% and will typically save some space.
+\usepackage{microtype}
+
+% This is also not strictly necessary, and may be commented out.
+% However, it will improve the aesthetics of text in
+% the typewriter font.
+\usepackage{inconsolata}
+
+%Including images in your LaTeX document requires adding
+%additional package(s)
+\usepackage{graphicx}
+\usepackage{booktabs} % Gói thêm để tạo bảng đẹp hơn
+
+% If the title and author information does not fit in the area allocated, uncomment the following
+%
+%\setlength\titlebox{5cm}
+%
+% and set <dim> to something 5cm or larger.
+
+\title{Your Paper Title Here}
+
+\author{First Author \\
+  Affiliation / Address line 1 \\
+  Affiliation / Address line 2 \\
+  Affiliation / Address line 3 \\
+  \texttt{email@domain} \\\And
+  Second Author \\
+  Affiliation / Address line 1 \\
+  Affiliation / Address line 2 \\
+  Affiliation / Address line 3 \\
+  \texttt{email@domain} \\}
+
+\begin{document}
+\maketitle
+\begin{abstract}
+This is the abstract of your paper. It should briefly summarize the context, the problem, your proposed method, the main results, and the key contributions. Aim for 150-250 words.
+\end{abstract}
+
+% ==================================================
+% SECTION 1: INTRODUCTION
+% ==================================================
+\section{Introduction}
+Start by introducing the research problem and its significance. Briefly review the state of the art and highlight the limitations or gaps that your work addresses. Conclude this section with a clear statement of your contributions. For example: "In this paper, we propose..." followed by a list of your key contributions.
+
+
+% ==================================================
+% SECTION 2: METHODOLOGY
+% ==================================================
+\section{Methodology}
+This section describes your proposed method in detail. You can divide it into subsections for clarity.
+
+\subsection{Overall Architecture}
+Provide a high-level overview of your model or framework. A figure illustrating the architecture is often very helpful here.
+
+\subsection{Component Details}
+Describe the specific components of your method. Use equations where necessary to formalize your approach.
+\begin{equation}
+  \label{eq:example}
+  \mathcal{L}_{task} = f(x, \theta)
+\end{equation}
+You can refer to this equation using \verb|\ref{eq:example}|, for instance, as shown in Eq.~\ref{eq:example}.
+
+
+% ==================================================
+% SECTION 3: EXPERIMENTS
+% ==================================================
+\section{Experiments}
+This section details the experimental setup.
+
+\subsection{Datasets}
+Describe the datasets used for evaluation. Include relevant statistics, such as size, splits (train/validation/test), and any preprocessing steps. A summary table is recommended.
+
+\begin{table}[h]
+\centering
+\begin{tabular}{lrrr}
+\toprule
+\textbf{Dataset} & \textbf{Train} & \textbf{Dev} & \textbf{Test} \\
+\midrule
+Dataset-A & 80k & 10k & 10k \\
+Dataset-B & 120k & 15k & 15k \\
+\bottomrule
+\end{tabular}
+\caption{Statistics of the datasets used.}
+\label{tab:datasets}
+\end{table}
+
+\subsection{Baselines}
+List the baseline models you are comparing against. These should include established methods and recent state-of-the-art approaches. Remember to cite them properly, e.g., \citet{Gusfield:97}.
+
+\subsection{Evaluation Metrics}
+Specify the metrics used to evaluate performance (e.g., Accuracy, F1-score, BLEU, etc.).
+
+\subsection{Implementation Details}
+Provide key hyperparameters (e.g., learning rate, batch size, optimizer) and information about the computing infrastructure (e.g., GPU model) to ensure reproducibility.
+
+
+% ==================================================
+% SECTION 4: RESULTS AND ANALYSIS
+% ==================================================
+\section{Results and Analysis}
+Present and discuss your experimental results.
+
+\subsection{Main Results}
+Show the main quantitative results in a table, comparing your model against the baselines. Use boldface for the best results.
+
+\begin{table*}[t]
+\centering
+\begin{tabular}{lcccc}
+\toprule
+\textbf{Model} & \multicolumn{2}{c}{\textbf{Dataset-A}} & \multicolumn{2}{c}{\textbf{Dataset-B}} \\
+\cmidrule(lr){2-3} \cmidrule(lr){4-5}
+& Metric 1 & Metric 2 & Metric 1 & Metric 2 \\
+\midrule
+Baseline 1 \citep{Gusfield:97} & 85.1 & 84.5 & 75.3 & 74.8 \\
+Another Baseline & 87.3 & 86.8 & 77.9 & 77.2 \\
+\midrule
+\textbf{Our Model} & \textbf{89.5} & \textbf{88.9} & \textbf{79.2} & \textbf{78.5} \\
+\bottomrule
+\end{tabular}
+\caption{Main results comparing our model with baselines on two datasets. Best scores are in bold.}
+\label{tab:main_results}
+\end{table*}
+
+\subsection{Analysis}
+Provide a deeper analysis of the results. This could include an ablation study to show the contribution of each component of your model, an error analysis to understand failure cases, or qualitative examples that showcase the strengths of your approach.
+
+
+% ==================================================
+% SECTION 5: CONCLUSION
+% ==================================================
+\section{Conclusion}
+Summarize the paper's contributions. Reiterate the problem you addressed, your proposed solution, and the key findings. Briefly suggest potential directions for future work.
+
+
+% ==================================================
+% OPTIONAL SECTIONS (DO NOT COUNT TOWARDS PAGE LIMIT)
+% ==================================================
+\section*{Limitations}
+Acknowledge the limitations of your work. This demonstrates a thorough understanding of your research context and adds credibility. For example, you might discuss scalability issues, reliance on specific data assumptions, or performance on out-of-domain data.
+
+\section*{Acknowledgments}
+Include acknowledgments for funding sources, colleagues who provided feedback, or any other support you received.
+
+
+% ==================================================
+% REFERENCES
+% ==================================================
+% The \bibliography command goes here.
+% Your BibTeX file should be named "custom.bib"
+\bibliography{custom}
+
+
+% ==================================================
+% APPENDIX (DOES NOT COUNT TOWARDS PAGE LIMIT)
+% ==================================================
+\appendix
+\section{Appendix Title}
+\label{sec:appendix}
+This is an appendix. You can include additional details here that are not essential to the main paper but might be useful for interested readers, such as detailed proofs, extra experimental results, or algorithm pseudocode.
+
+\end{document}

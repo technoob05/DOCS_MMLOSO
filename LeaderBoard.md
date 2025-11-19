@@ -1,0 +1,117 @@
+#
+Team
+Members
+Score
+Entries
+Last
+Solution
+1
+—
+SajayR
+212.04737
+41
+4d
+2
+—
+HCMUS_PrompterXPrompter
++2
+186.36924
+43
+4d
+3
+—
+No
+184.87249
+10
+5d
+4
+—
+boy Magic
+179.83162
+9
+5d
+5
+2
+Shooting star💫
+179.49326
+5
+4d
+6
+3
+VaibhavKanojia3773
+161.11685
+1
+5d
+7
+1
+Shivansh Jha
+153.90990
+3
+6d
+8
+2
+Badr A
+145.47673
+5
+5d
+9
+2
+EROL
+134.02707
+3
+5d
+10
+—
+king
+133.96903
+3
+6d
+11
+1
+e0nia
+131.56737
+4
+12d
+12
+7
+c00k
+111.47856
+2
+4d
+13
+—
+Kabir Raj Singh
+104.07356
+3
+7d
+14
+—
+Daglox Kankwanda
+96.22652
+6
+4d
+15
+—
+Michael Ibrahim
+87.17934
+5
+7d
+16
+—
+Harsh Rajbhar
+35.18576
+1
+17d
+17
+—
+winner_can_exist
+20.80606
+1
+6d
+18
+—
+Code by Nadiia
+6.28686
+2
+18d
+2 total results
